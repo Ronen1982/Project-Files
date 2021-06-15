@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Individual Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Contact-Stylesheet.css" rel="stylesheet">
+        <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+        <script>
+            function myFunction()
+            {
+                alert("You are now logged out")
+                document.location.href="Home.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="login">
+            <button onClick="myFunction()">Logout</button>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <lable class="logo"><img src="Veron-Logo.png"></lable>
+            <ul>
+                <li><a href="Home-Logedin.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Info</a>
+                    <div class="dropdown-content">
+                        <a href="About.html" target="_parent">About</a>
+                        <a href="Portfolio.html" target="_parent">Portfolio</a>
+                        <a href="Resume.html" target="_parent">Resume</a>
+                    </div>
+                </li>
+                <li><a href="Video.html">Video</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="index.html" method="POST">
+                <input type="text" class="contact-form-text" placeholder="Your name">
+                <input type="email" class="contact-form-text" placeholder="Your email">
+                <input type="text" class="contact-form-text" placeholder="Your phone">
+                <textarea class="contact-form-text" placeholder="Reason for contacting"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Individual Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Stylesheet.css" rel="stylesheet">
+        <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+        <script>
+            function myFunction()
+            {
+                alert("You are now logged out")
+                document.location.href="Home.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="login">
+            <button onClick="myFunction()">Logout</button>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <lable class="logo"><img src="Veron-Logo.png"></lable>
+            <ul>
+                <li><a href="Home-Logedin.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Info</a>
+                    <div class="dropdown-content">
+                        <a href="#" target="_parent">About</a>
+                        <a href="Portfolio.html" target="_parent">Portfolio</a>
+                        <a href="Resume.html" target="_parent">Resume</a>
+                    </div>
+                </li>
+                <li><a href="Video.html">Video</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="info">
+                <div class="info-title">
+                    <h1>About Me</h1>
+                </div>
+                <div class="info-body">
+                    <h3>I'm not going to start telling you about me from diaper time. We are going to fast-forward a couple of decates or so.
+                        I have started University in 2003 taking Business Admin at York. After 2 years in the program I got in a serious car accident.
+                        Only after 7 years after the accident I was able to go back to school, but at that time I wanted to change my major to Political Science.</h3>
+                        <h3>Once graduated, only 2 years later, I commited myself to finding work that will accomodate both my physical disability and work / salery interests.
+                        I have searched for almost a year, before my newly wedded wife asked me what do I think about owning a restaurant. It took me some time, but I 
+                        agreed that it could be an interesting idea, which in turn, can take us out of Toronto.</h3>
+                    <h3>It turns out I can cook preaty good, and I found the restaurant business to be quite challenging. 
+                        In other words, I believed to have found my calling. </h3>
+                    <h3>However, at the begining of 2020, COVID-19 hit us all, and I started realizing that I need to have some back-up
+                        to my restaurant. Hence, I have decided to go back to school, but this time change direction and try something with computers.</h3>
+                    <h3>So, that's how I got here. My goal now is to succeed in this feild, as I do need to take care of my family.</h3>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

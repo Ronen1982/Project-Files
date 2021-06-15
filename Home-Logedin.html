@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Individual Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Stylesheet.css" rel="stylesheet">
+        <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="Veron-Logo.png" class="logoImg"></a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu();">Home</a></li>
+                <li><a href="About.html" onclick="toggleMenu();">About</a></li>
+                <li><a href="Portfolio.html" onclick="toggleMenu();">Portfolio</a></li>
+                <li><a href="Resume.html" onclick="toggleMenu();">Resume</a></li>
+                <li><a href="Video.html" onclick="toggleMenu();">Video</a></li>
+                <li><a href="Contact.html" onclick="toggleMenu();">Contact</a></li>
+                <li><button class="logout" onClick="myFunction()">Logout</button></li>
+            </ul>
+        </header>
+        
+        <div class="title">
+            <h1>Building a Website</h1>
+        </div>
+        <section>
+            <div class="content">
+                <h2>This page offers more linked pages and design options.</h2>
+                <h3>
+                    After much game and practice, &nbsp;I was able to offer more options and updates to this website. &nbsp;&nbsp;
+                    After passing the Login page, which also has design and Java applied to it, this page offers links to other pages,
+                    and degin platforms.&nbsp;&nbsp;
+                    Here you will find drop down menu, &nbsp;gallery and a built-in resume page,&nbsp; as well as a <span class="howto">How To</span> video.
+                    &nbsp;&nbsp;Enjoy browsing through the site and feel free to use the contact page (static page) to challenge my creativity.
+                </h3>
+            </div>
+        </section>
+
+        <script>
+            function myFunction() {
+                alert( "You are now logged out" )
+                document.location.href = "Home.html";
+            }
+        </script>
+        
+        <script type="text/javascript">
+            window.addEventListener( 'scroll', () => {
+                const header = document.querySelector( 'header' );
+                header.classList.toggle( "sticky", window.scrollY > 0 );
+            } );
+
+            function toggleMenu() {
+                const menuToggle = document.querySelector( '.menuToggle' );
+                const navigation = document.querySelector( '.navigation' );
+                menuToggle.classList.toggle( 'active' );
+                navigation.classList.toggle( 'active' );
+            }
+        </script>
+
+    </body>
+</html>
